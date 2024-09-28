@@ -1,0 +1,43 @@
+android_app {
+    name: "Launcher",
+
+    srcs: ["app/src/**/*.java"],
+
+    resource_dirs: ["app/src/main/res"],
+
+    platform_apis: true,
+
+    required: ["privapp_whitelist_net.hwyz.iov.idcm.launcher"],
+
+    certificate: "platform",
+
+    privileged: true,
+
+    overrides: [
+        "Launcher2",
+    ],
+
+    optimize: {
+        enabled: false,
+    },
+
+    dex_preopt: {
+        enabled: false,
+    },
+
+    static_libs: [
+        "androidx-constraintlayout_constraintlayout-solver",
+        "androidx-constraintlayout_constraintlayout",
+        "androidx.lifecycle_lifecycle-extensions",
+        "car-media-common",
+        "car-ui-lib",
+    ],
+
+    libs: ["android.car"],
+
+    product_variables: {
+        pdk: {
+            enabled: false,
+        },
+    },
+}

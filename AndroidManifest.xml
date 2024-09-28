@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.hwyz.iov.idcm.launcher">
+
+    <!-- 分屏显示 -->
+    <uses-permission android:name="android.permission.ACTIVITY_EMBEDDING" />
+    <!-- 事件注入 -->
+    <uses-permission android:name="android.permission.INJECT_EVENTS" />
+    <!-- 系统级窗口 -->
+    <uses-permission android:name="android.permission.INTERNAL_SYSTEM_WINDOW" />
+    <!-- 管理Activity -->
+    <uses-permission android:name="android.permission.MANAGE_ACTIVITY_STACKS" />
+    <!-- 用户管理 -->
+    <uses-permission android:name="android.permission.MANAGE_USERS" />
+    <!-- 应用统计 -->
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" />
+    <!-- 应用前后台切换 -->
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <!-- Dump权限 -->
+    <uses-permission android:name="android.permission.DUMP" />
+    <!-- 获取WIFI状态 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 访问互联网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+</manifest>
